@@ -1,0 +1,72 @@
+.widget {
+  display: flex;
+  flex: 21%;
+  flex-direction: column;
+  max-height: calc(100vh - 4rem);
+  overflow-y: scroll;
+}
+.widget::-webkit-scrollbar {
+  display: none;
+}
+/* scrollbar-hide */
+.widget {
+  -ms-overflow-style: none; /* IE, Edge*/
+  scrollbar-width: none; /* Firefox*/
+}
+.sponsored {
+  padding: 8px;
+}
+.sponsored > p {
+  color: rgb(160, 141, 141);
+  font-weight: 600;
+}
+.sponsor {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image {
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+}
+.sponsor > p {
+  font-size: 15px;
+  margin-left: 5px;
+  color: white;
+}
+.sponsor:hover {
+  cursor: pointer;
+  background-color: rgb(75, 71, 71, 0.75);
+}
+
+.border {
+  border-bottom: 0.5px solid rgb(87, 78, 78);
+  padding: 10px;
+  margin-left: 5px;
+}
+.contact {
+  padding: 8px;
+}
+.contact > p {
+  color: rgb(160, 141, 141);
+  font-weight: 600;
+}
+.friend {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  /* margin-top: px; */
+  padding: 8px;
+}
+.friend > p {
+  margin-left: 10px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+.friend:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(75, 71, 71, 0.75);
+}

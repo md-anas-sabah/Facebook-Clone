@@ -1,5 +1,38 @@
 .feed {
   display: flex;
-  flex: 60%;
+  flex: 50%;
   flex-direction: row;
+  border-right: 1px solid red;
+  min-width: fit-content;
+  overflow-y: scroll;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+/* scrollbar-hide */
+.feed {
+  -ms-overflow-style: none; /* IE, Edge*/
+  scrollbar-width: none; /* Firefox*/
+}
+.feed__header {
+  margin: 5px 90px 0 90px;
+  padding: 15px 20px;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+}
+
+.header__input {
+  display: flex;
+  padding: 20px;
+}
+
+.header__input > input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
 }
